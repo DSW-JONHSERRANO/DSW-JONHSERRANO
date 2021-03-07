@@ -8,45 +8,82 @@
  <div menu>
      <nav>
          <ul>
-    <li><a >Inicio</a></li>
-    <li><a >Temas</a>
+    <li><a  href="">Inicio</a></li>
+    <li><a  href="">Temas</a>
     <ul>
-        <li><a >Tema 1</a></li>
-        <li><a >Tema 2</a></li>
+        <li><a  href="">Tema 1</a></li>
+        <li><a  href="">Tema 2</a></li>
     </ul>
     </li>
-    <li><a >Recursos Digitales</a>
+    <li><a  href="">Recursos Digitales</a>
         <ul>
-        <li><a >Recursos 1</a></li>
-        <li><a >Recursos 2</a></li>
+        <li><a  href="">Recursos 1</a></li>
+        <li><a  href="">Recursos 2</a></li>
     </li>
         </ul>
-    <li><a >Aprendizaje</a>
+    <li><a  href="">Aprendizaje</a>
     <ul>
-        <li><a >Actividad 1</a></li>
-        <li><a >Actividad 2</a></li>
+        <li><a  href="">Actividad 1</a></li>
+        <li><a  href="">Actividad 2</a></li>
     </li>
         </ul>
-    <li><a >Acerca de</a>
-        <ul> <li><a >Autor</a></li></ul>
+    <li><a  href="">Acerca de</a>
+        <ul> <li><a  href="">Autor</a></li></ul>
            </li>
      </ul>
     </nav>
     <section>
-        Conceptos de Etiquetas Basicas de HTML, atributos y valores
+        <h1> Conceptos de Etiquetas Basicas de HTML, atributos y valores</h1>
     </section>
-    <p></p>
+    <p>
         <article>
-            Texto de ejemplo Articulo
-            Redactar un primer borrador con los contenidos que se publicarán en el sitio web,debidamente citados y referenciados con norma APA, al igual que al menos una imagen que ilustre los temas que se abordan en el sitio
-        </article>
+            
+            En HTML las etiquetas se escriben con el siguiente formato: <br><br>
+            &lt&gtmarca&gtcontenido&ltmarca&gt<br><br>
+            La etiqueta aquí representada se llama marca y vemos que la etiqueta de comienzo y la etiqueta de cierre se distinguen en que la de cierre comienza por una barra inclinada (/). En HTML hay muchas etiquetas emparejadas como estas:<br><br>
+            &lth1&gtIntroducción&lt/h1&gt<br><br>
+            &ltp&gtEsto es un párrafo&lt/p&gt <br><br>
+            Pero HTML también permite tener algunas etiquetas sin emparejar. Estas etiquetas terminan con una barra inclinada: <br><br>
+            &lthr /&gt<br><br>
+            &ltlink ... /&gt <br><br>
+            Incluso hay etiquetas que no necesitan una etiqueta de cierre: <br><br>
+            &ltimg ...&gt <br><br>
+            &ltp&gtEsto es un párrafo, pero no necesita cierre.<br><br>
+           En HTML las etiquetas se pueden escribir en mayúsculas o minúsculas, indistintamente. El bloque contenido entre una etiqueta de inicio y otra de cierre (o una etiqueta sin emparejar) lo llamaremos elemento. Veremos que lo normal es que unos elementos estén contenidos dentro de otros elementos.<br><br>
+           De esta forma daremos estructura al documento. <br><br>
+           Un elemento puede tener una etiqueta con atributos. Un atributo especifica algunas características singulares de un elemento o información adicional. Los atributos se especifican como pares atributo=”valor”, separados por espacios dentro de la etiqueta de inicio:<br><br>
+            &ltetiqueta atributo=”valor”&gt texto &lt/etiqueta&gt <br><br>
+           En HTML no es obligatorio que el valor vaya entre comillas, pero sí recomendado. Se usan en muchos elementos: <br><br>
+           &lta href=”http://www.ra-ma.es/”&gtEditorial RA-MA&lt/a&gt<br><br>
+            &ltimg src=”smiley.gif” alt=”Carita sonriente” /&gt<br><br>
+            El primero define un hiperenlace mientras que el segundo da información sobre la imagen que se va a insertar en el documento.<br><br>
+            Existen atributos genéricos que se pueden asociar a cualquier etiqueta y que nos serán de gran utilidad cuando estudiemos las tecnologías CSS y JavaScript: <br><br>
+           id = “texto” <br><br>
+           Asigna un identificador único al elemento dentro de la página. De esta forma podremos dar formato o manipular un elemento concreto de la página web.<br><br>
+            class = “texto”<br><br>
+            Indica que el elemento es de una clase concreta. Así varios elementos pueden ser de la misma clase y luego formatearlos o manipularlos de forma conjunta. <br><br>
+           style = “texto” <br><br>
+           Establece de forma directa los estilos CSS del elemento. Intentaremos evitar esto para no mezclar formato y contenido. Es su lugar, todo el estilo irá en un archivo CSS aparte.<br><br>
+            title = “texto” <br><br>
+           Asigna un título a un elemento. Es útil para mejorar la accesibilidad, ya que los navegadores lo muestran cuando el usuario pasa el ratón por encima del elemento.<br>
+
+           <h3>Mockup del sitio Web</h3>
+        <img src="img/DisenoPagina.png" alt="Diseño Página Web">
+          /article>
+    </p>
+        <h3>Cita Bibliográfica <br></h3>
+Recio García, J. A. (2016). HTML5, CSS3 y JQuery: curso práctico. Paracuellos de Jarama, Madrid, RA-MA Editorial. Recuperado de https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/106494?page=55.
+</p>
+    </p>
  </div>
  <p></p>
   <footer>
-        <p>Realizado Jonh Serrano  <br>
+        <p>Autor <br>
+            Jonh Serrano  <br>
             Correo: jjserranon@unadvirtual.edu <br>
-             Skype: jonh_serrano<br>
-             Febrero  2021</p>   
+            Skype: jonh_serrano<br>
+            Febrero  2021</p>
   </footer>
 </body>
 </html>
+
