@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 2</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Etiquetas Básicas de HTML, atributos y valores</h1>
+    </header>
+    <nav>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Temas</a>
+                    <ul class="dropdown-1">
+                        <li><a href="Temas1.html">Tema 1 Uso de las Etiquetas de HTML</a></li>
+                        <li><a href="Temas2.html">Tema 2 Que son las hojas de Estilo?</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Recursos Digitales</a>
+                    <ul class="dropdown-1">
+                        <li><a href="Recursos1.html">Recurso Digital #1</a></li>
+                        <li><a href="Recursos2.html">Recurso Digital #2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Aprendizaje</a>
+                    <ul class="dropdown-1">
+                        <li><a href="Aprendizaje1.html">Pagina #1</a></li>
+                        <li><a href="Aprendizaje2.html">Pagina #2</a></li>
+                    </ul>
+                <li><a href="autor.html">Autor</a></li>
+            </ul>
+        </nav>
+     
+    </nav>
+    <div class="contenedor">
+    <section>
+        <article<p><h1>¿QUÉ SON LAS HOJAS DE ESTILO? </h1> <br></p>
+      Las hojas de estilo permiten aplicar estilo a los contenidos de una manera más efectiva que mediante la aplicación de estilos físicos y lógicos con etiquetas nativas HTML. Las hojas de estilo se incorporan a HTML, con sus primeras recomendaciones CSS1, en el año 1996. Con ellas se pretendía hacer realidad la separación entre el contenido y el aspecto de este, de manera que el aspecto que adquiere un contenido no dependa de cómo interprete el navegador las instrucciones del código 
+      para visualizar la página de una manera o de otra. Las hojas de estilo tienen otra ventaja importante a la hora de facilitar los cambios y actualizaciones en el aspecto de los contenidos. Cuando se crea una hoja de estilo esta queda vinculada a los contenidos a los que se aplica; de esta manera, con un simple cambio en la hoja de estilo, los contenidos vinculados a ella quedan automáticamente actualizados. </p><br>
+      <p>Una hoja de estilo se puede aplicar a un bloque de texto, a un documento entero o a un grupo de documentos. Al vincular una hoja de estilo a un grupo de documentos, se pueden hacer cambios directamente a todas las páginas que forman un sitio, con el ahorro de tiempo y aumento de calidad en el trabajo que esto supone. <br> Una hoja de estilo puede residir en el propio documento o estar contenida en un documento especial, separado del documento al que afecta y vinculada con él.  </p><br>
+Las hojas de estilo abarcan aspectos muy diversos de los contenidos, y no sólo afectan al texto. </p><br>
+El concepto de hoja de estilo CSS para la Web es más amplio que el que conocemos para la maquetación de los documentos gráficos impresos. Las hojas de estilo CSS admiten propiedades que afectan al texto, a las imágenes, a los fondos de los documentos, a las tablas, etc.</p><br>
+</article>
+<article>
+    <br><h1>TIPOS DE HOJAS DE ESTILO </h1><br></p>
+ 
+    <p> Las hojas de estilo, según la manera de aplicarse, se pueden dividir en dos grupos: </p><br>
+<p>- Hoja de estilo interna o residente: Sólo afecta al documento en el que se crea. Se define con la etiqueta &ltSTYLE&gt, que se inserta en la cabecera del documento, entre las etiquetas &ltHEAD&gt y &lt/HEAD&gt. </p><br>
+<p>- Hoja de estilo externa: Puede afectar a cualquier documento que se vincule con ella. Contiene toda la información en un documento independiente del documento HTML. Se almacena con extensión .css. </p><br>
+<p>- Las hojas de estilo, según al contenido al que afectan, se pueden dividir en tres tipos: </p><br>
+<p>- De clase: Afecta al bloque de texto sobre el que se aplique. Por tanto, puede modificar cualquier contenido simplemente con aplicar la hoja a ese contenido concreto. Por ejemplo, se puede aplicar un estilo a un párrafo determinado dentro de un documento, y no a los demás párrafos de este. </p><br>
+<p> - De etiqueta: Se aplica a una etiqueta determinada y afectará a cualquier contenido definido por la etiqueta vinculada. </p><br>
+<p> Por ejemplo, se puede aplicar un estilo a todos los textos que estén definidos con la etiqueta &ltH1&gt en todo el documento. </p><br>
+<p>- De identificador Id: Mediante un identificador se pueden marcar los textos a los que afectará el estilo. </p><br>
+
+<br>
+<h1>ETIQUETAS PRINCIPALES DE LAS HOJAS DE ESTILO </h1> <br></p>
+
+<article>
+    <p>La forma de aplicar estilo a los documentos es diferente dependiendo de que se trate de una hoja de estilo interna residente, o una hoja de estilo externa vinculada. </p><br>
+
+    <p>Hojas de estilo internas</p><br>
+    <p>La principal etiqueta que utilizan las hojas de estilo internas es la etiqueta &ltSTYLE&gt que se debe cerrar con &lt/STYLE&gt. Esta etiqueta indica al navegador el estilo que debe aplicar a cada contenido. La etiqueta &ltSTYLE&gt se escribe en la cabecera del documento, entre las etiquetas &ltHEAD&gt de apertura y cierre. </p><br>
+    <p>Esta etiqueta dispone de un atributo principal que es TYPE. </p><br>
+    <p>-  TYPE=“text/css”: Define el lenguaje de hojas de estilo a utilizar en el documento. </p><br>
+    <p>A continuación del atributo, y por cada una de los estilos que se modifican, se define la propiedad y su valor. Algunos ejemplos, para la modificación de los estilos que afectan al tamaño y tipo de letra de un bloque de texto, serían los siguientes: </p><br>
+    <p> + font-size: 18px; </p><br>
+    <p>+  font-family: Georgia, Times New Roman, Times; </p><br>
+    <p>El código completo que modificaría el tamaño y el tipo de letra con una hoja de clase interna, denominada Tit!, sería el siguiente: </p><br>
+    <p> &ltstyle type="text/css”&gt </p><br>
+    <p>&ltI— Tit1 ( font-size: 18px; font-family: Georgia, “Times New Roman”, Times, serif; </p><br>
+    <p>&gt &ltIstyle&gt </p><br>
+    <p>Cuando se trabaja con hojas de estilo internas, es necesario crear una hoja en cada documento, ya que el código que define el estilo reside en la cabecera del documento y sólo afecta</p><br>
+     <img src="img/pagina de prueba.PNG" alt="pagina de prueba">    
+</article>  
+<article>
+    <p> <h1>versión en DPF</h1> </p>
+    <iframe src="documentos/tema10.pdf" frameborder="0" width="100%" height="500"></iframe>
+    <p></p><br>
+</article>
+ <article>
+</p><h3>Cita Bibliográfica <br></h3>
+<br>
+Terán Anciano, J. (2016). Manual de Introducción al lenguaje HTML. Formación para el Empleo. Madrid, Spain: Editorial CEP, S.L. Recuperado de https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/50964?page=137.
+<br><br>
+    </article>   
+    </section>
+    <aside>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=400&height=2400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="2400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </aside>
+    </div>
+    <footer>
+        <p>Autor <br>
+        Jonh Serrano  <br>
+        Correo: jjserranon@unadvirtual.edu <br>
+        Skype: jonh_serrano<br>
+        Abril  2021</p>
+    </footer>
+
+</body>
+</html>
