@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Tema 1</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
     <header>
         <h1>Etiquetas Básicas de HTML, atributos y valores</h1>
@@ -35,58 +37,81 @@
                 <li><a href="autor.html">Autor</a></li>
             </ul>
         </nav>
-     
+
     </nav>
     <div class="contenedor">
-    <section>
-        <article<p><h1>Uso de las Etiquetas de HTML</h1> <br></p>
-            En HTML las etiquetas se escriben con el siguiente formato: <br><br>
-            &lt&gtmarca&gtcontenido&ltmarca&gt<br><br>
-            La etiqueta aquí representada se llama marca y vemos que la etiqueta de comienzo y la etiqueta de cierre se distinguen en que la de cierre comienza por una barra inclinada (/). En HTML hay muchas etiquetas emparejadas como estas:<br><br>
-            &lth1&gtIntroducción&lt/h1&gt<br><br>
-            &ltp&gtEsto es un párrafo&lt/p&gt <br><br>
-            Pero HTML también permite tener algunas etiquetas sin emparejar. Estas etiquetas terminan con una barra inclinada: <br><br>
-            &lthr /&gt<br><br>
-            &ltlink ... /&gt <br><br>
-            Incluso hay etiquetas que no necesitan una etiqueta de cierre: <br><br>
-            &ltimg ...&gt <br><br>
-            &ltp&gtEsto es un párrafo, pero no necesita cierre.<br><br>
-           En HTML las etiquetas se pueden escribir en mayúsculas o minúsculas, indistintamente. El bloque contenido entre una etiqueta de inicio y otra de cierre (o una etiqueta sin emparejar) lo llamaremos elemento. Veremos que lo normal es que unos elementos estén contenidos dentro de otros elementos.<br><br>
-           De esta forma daremos estructura al documento. <br><br>
-           Un elemento puede tener una etiqueta con atributos. Un atributo especifica algunas características singulares de un elemento o información adicional. Los atributos se especifican como pares atributo=”valor”, separados por espacios dentro de la etiqueta de inicio:<br><br>
-            &ltetiqueta atributo=”valor”&gt texto &lt/etiqueta&gt <br><br>
-           En HTML no es obligatorio que el valor vaya entre comillas, pero sí recomendado. Se usan en muchos elementos: <br><br>
-           &lta href=”http://www.ra-ma.es/”&gtEditorial RA-MA&lt/a&gt<br><br>
-            &ltimg src=”smiley.gif” alt=”Carita sonriente” /&gt<br><br>
-            El primero define un hiperenlace mientras que el segundo da información sobre la imagen que se va a insertar en el documento.<br><br>
-            Existen atributos genéricos que se pueden asociar a cualquier etiqueta y que nos serán de gran utilidad cuando estudiemos las tecnologías CSS y JavaScript: <br><br>
-           id = “texto” <br><br>
-           Asigna un identificador único al elemento dentro de la página. De esta forma podremos dar formato o manipular un elemento concreto de la página web.<br><br>
-            class = “texto”<br><br>
-            Indica que el elemento es de una clase concreta. Así varios elementos pueden ser de la misma clase y luego formatearlos o manipularlos de forma conjunta. <br><br>
-           style = “texto” <br><br>
-           Establece de forma directa los estilos CSS del elemento. Intentaremos evitar esto para no mezclar formato y contenido. Es su lugar, todo el estilo irá en un archivo CSS aparte.<br><br>
-            title = “texto” <br><br>
-           Asigna un título a un elemento. Es útil para mejorar la accesibilidad, ya que los navegadores lo muestran cuando el usuario pasa el ratón por encima del elemento.<br>
-            <br>
-        </article>   
-    </p>
-    <h3>Cita Bibliográfica <br></h3>
-    <br>
-Recio García, J. A. (2016). HTML5, CSS3 y JQuery: curso práctico. Paracuellos de Jarama, Madrid, RA-MA Editorial. Recuperado de https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/106494?page=55.
-</p>
-            </section>
-    <aside>
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=400&height=1300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="1300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-    </aside>
+        <section>
+            <article<p>
+                <h1>Uso de las Etiquetas de HTML</h1> <br></p>
+                En HTML las etiquetas se escriben con el siguiente formato: <br><br>
+                &lt&gtmarca&gtcontenido&ltmarca&gt<br><br>
+                La etiqueta aquí representada se llama marca y vemos que la etiqueta de comienzo y la etiqueta de cierre
+                se distinguen en que la de cierre comienza por una barra inclinada (/). En HTML hay muchas etiquetas
+                emparejadas como estas:<br><br>
+                &lth1&gtIntroducción&lt/h1&gt<br><br>
+                &ltp&gtEsto es un párrafo&lt/p&gt <br><br>
+                Pero HTML también permite tener algunas etiquetas sin emparejar. Estas etiquetas terminan con una barra
+                inclinada: <br><br>
+                &lthr /&gt<br><br>
+                &ltlink ... /&gt <br><br>
+                Incluso hay etiquetas que no necesitan una etiqueta de cierre: <br><br>
+                &ltimg ...&gt <br><br>
+                &ltp&gtEsto es un párrafo, pero no necesita cierre.<br><br>
+                En HTML las etiquetas se pueden escribir en mayúsculas o minúsculas, indistintamente. El bloque
+                contenido entre una etiqueta de inicio y otra de cierre (o una etiqueta sin emparejar) lo llamaremos
+                elemento. Veremos que lo normal es que unos elementos estén contenidos dentro de otros
+                elementos.<br><br>
+                De esta forma daremos estructura al documento. <br><br>
+                Un elemento puede tener una etiqueta con atributos. Un atributo especifica algunas características
+                singulares de un elemento o información adicional. Los atributos se especifican como pares
+                atributo=”valor”, separados por espacios dentro de la etiqueta de inicio:<br><br>
+                &ltetiqueta atributo=”valor”&gt texto &lt/etiqueta&gt <br><br>
+                En HTML no es obligatorio que el valor vaya entre comillas, pero sí recomendado. Se usan en muchos
+                elementos: <br><br>
+                &lta href=”http://www.ra-ma.es/”&gtEditorial RA-MA&lt/a&gt<br><br>
+                &ltimg src=”smiley.gif” alt=”Carita sonriente” /&gt<br><br>
+                El primero define un hiperenlace mientras que el segundo da información sobre la imagen que se va a
+                insertar en el documento.<br><br>
+                Existen atributos genéricos que se pueden asociar a cualquier etiqueta y que nos serán de gran utilidad
+                cuando estudiemos las tecnologías CSS y JavaScript: <br><br>
+                id = “texto” <br><br>
+                Asigna un identificador único al elemento dentro de la página. De esta forma podremos dar formato o
+                manipular un elemento concreto de la página web.<br><br>
+                class = “texto”<br><br>
+                Indica que el elemento es de una clase concreta. Así varios elementos pueden ser de la misma clase y
+                luego formatearlos o manipularlos de forma conjunta. <br><br>
+                style = “texto” <br><br>
+                Establece de forma directa los estilos CSS del elemento. Intentaremos evitar esto para no mezclar
+                formato y contenido. Es su lugar, todo el estilo irá en un archivo CSS aparte.<br><br>
+                title = “texto” <br><br>
+                Asigna un título a un elemento. Es útil para mejorar la accesibilidad, ya que los navegadores lo
+                muestran cuando el usuario pasa el ratón por encima del elemento.<br>
+                <br>
+                </article>
+                </p>
+                <h3>Cita Bibliográfica <br></h3>
+                <br>
+                Recio García, J. A. (2016). HTML5, CSS3 y JQuery: curso práctico. Paracuellos de Jarama, Madrid, RA-MA
+                Editorial. Recuperado de
+                https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/106494?page=55.
+                </p>
+        </section>
+        <aside>
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=400&height=1300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="400" height="1300" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </aside>
     </div>
     <footer>
         <p>Autor <br>
-        Jonh Serrano  <br>
-        Correo: jjserranon@unadvirtual.edu <br>
-        Skype: jonh_serrano<br>
-        Abril  2021</p>
+            Jonh Serrano <br>
+            Correo: jjserranon@unadvirtual.edu <br>
+            Skype: jonh_serrano<br>
+            Abril 2021</p>
     </footer>
 
 </body>
+
 </html>
