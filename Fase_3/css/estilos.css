@@ -29,6 +29,9 @@ footer{
     clear: both;
     
 }
+p {
+  padding: 10px;
+}
 
 * {
     margin: 0;
