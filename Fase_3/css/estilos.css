@@ -1,25 +1,33 @@
 header{
-    background-color: blue;
-    color: white;
+    background-color: white;
+    color: black;
+    padding: 12px
 }
 section{
-    float: left;
+   
+   float: left;
     width: 70%;
-    background-color: rgba(128, 255, 0, 0.336);
+    background-color: rgba(192, 245, 139, 0.336);
+    padding: 20px;
+    
 }
 aside{
     float: left;
     width: 30%;
     background-color: rgb(80, 120, 180);
+    padding: 1px;
 }
 footer{
-    background-color:darkgreen;
+    background-color:rgb(0, 5, 0);
     color: white;
+    padding: 15px;
+    
 }
 .contenedor::after{
     content: "";
     display: block;
     clear: both;
+    
 }
 
 * {
